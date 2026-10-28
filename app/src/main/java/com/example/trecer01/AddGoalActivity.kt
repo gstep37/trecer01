@@ -48,7 +48,7 @@ class AddGoalActivity : AppCompatActivity() {
 
             try {
                 GoalRepository.add(title, description, deadline)
-                Toast.makeText(this, "Цель добавлена", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Цель добавлена ", Toast.LENGTH_SHORT).show()
                 finish()
             } catch (e: Exception) {
                 Toast.makeText(this, "Ошибка: ${e.message}", Toast.LENGTH_LONG).show()
